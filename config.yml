@@ -1,0 +1,19 @@
+title: Pregunta
+description: >-
+  Compramos este VPN haste el día 25 de diciembre,y ahora ya está,no podemos
+  usar más,y tu colega de wechat ahora no se puede contactar ,como podemos
+  comprar otra vez?
+template:
+  repo: pregunta-template
+  name: pregunta
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
